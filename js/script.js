@@ -8,6 +8,8 @@ const pageTitle = {
     en: "Jonathan Quiroz | Software Developer"
 };
 
+const cvDownload = document.getElementById("cv-download");
+
 function changeLanguage(language) {
 
     // Change HTML language
@@ -25,6 +27,21 @@ function changeLanguage(language) {
     // Update language buttons
     buttons.es.classList.toggle("active", language === "es");
     buttons.en.classList.toggle("active", language === "en");
+
+    if (cvDownload) {
+
+        if (language === "en") {
+
+            cvDownload.href =
+                "assets/cv/Jonathan-Quiroz-CV-EN.pdf";
+
+        } else {
+
+            cvDownload.href =
+                "assets/cv/Jonathan-Quiroz-CV-ES.pdf";
+        }
+
+    }
 
     // Change browser tab title
     document.title = pageTitle[language];
