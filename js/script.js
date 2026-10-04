@@ -33,12 +33,12 @@ function changeLanguage(language) {
         if (language === "en") {
 
             cvDownload.href =
-                "assets/cv/Jonathan-Quiroz-CV-EN.pdf";
+                "assets/cv/Jonathan-Quiroz-CV-EN-Backend.pdf";
 
         } else {
 
             cvDownload.href =
-                "assets/cv/Jonathan-Quiroz-CV-ES.pdf";
+                "assets/cv/Jonathan-Quiroz-CV-ES-Backend.pdf";
         }
 
     }
